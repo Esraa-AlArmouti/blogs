@@ -1,0 +1,37 @@
+@mixin padding-horizontal($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+@mixin padding-vertical($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+@mixin padding-bottom($size) {
+  padding-bottom: $size;
+}
+@mixin padding-top($size) {
+  padding-top: $size;
+}
+@mixin padding-reset() {
+  padding: 0;
+}
+@mixin margin-horizontal($size) {
+  margin-left: $size;
+  margin-right: $size;
+}
+@mixin margin-vertical($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+@mixin margin-auto($size) {
+  margin: $size auto;
+}
+@mixin margin-bottom($size) {
+  margin-bottom: $size;
+}
+@mixin margin-top($size) {
+  margin-top: $size;
+}
+@mixin margin-reset() {
+  margin: 0;
+}

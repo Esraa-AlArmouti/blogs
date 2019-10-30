@@ -1,0 +1,185 @@
+@charset "UTF-8";
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+  background-color: #fbfbfb;
+}
+body .main-header {
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #64677e;
+}
+body .main .row div.cardsContainer, body .main .row div.small-cards-container {
+  float: right;
+}
+body .main .row div.cardsContainer .row, body .main .row div.small-cards-container .row {
+  margin: 0;
+}
+body .main .row div.cardsContainer .popular-header, body .main .row div.small-cards-container .popular-header {
+  border-bottom: 1px solid #ededed;
+  padding: 8px;
+  margin-left: 16px;
+  margin-bottom: 0;
+  color: #64677e;
+}
+body .main .row div.cardsContainer {
+  padding-right: 0;
+}
+body .main .row div.small-cards-container {
+  padding-left: 0;
+}
+body .main .card {
+  background-color: #ffffff;
+  display: flex;
+  margin-bottom: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  -webkit-box-shadow: 0 4px 8px #f7f7f7;
+  box-shadow: 0 4px 8px #f7f7f7;
+  border: 1px solid #dddddd59;
+}
+body .main .card a {
+  color: inherit;
+  text-decoration: none;
+}
+body .main .card img.card-img-top {
+  padding: 0;
+  float: right;
+}
+body .main .card .card-body {
+  height: 100%;
+}
+body .main .card .card-body .card-title {
+  font-weight: 600;
+}
+body .main .card .card-body p.card-text {
+  font-weight: 200;
+  font-size: 14px;
+  color: #9d9fad;
+}
+body .main span.icon-bookmark {
+  float: left;
+  font-size: 16px;
+  color: #64677e;
+}
+body .main .editing-info {
+  font-size: 12px;
+  position: absolute;
+  width: calc(100% - 32px - 2px);
+  bottom: 12px;
+}
+body .main .editing-info > div {
+  padding: 0;
+  float: right;
+}
+body .main .editing-info .editing-date {
+  text-align: left;
+}
+body .main .editing-info .editing-date > div {
+  display: inline-block;
+  color: #bcbcbc;
+}
+body .main .editing-info .editor-name {
+  color: #9d9fad;
+  font-weight: 400;
+}
+body .main .editing-info .editor-name span.normal-font {
+  font-weight: 200;
+}
+body .main .icon {
+  color: #f0ba40;
+}
+body .main .time-info::before {
+  content: "|";
+  color: #bcbcbc;
+}
+body .main .small-cards {
+  border-left: 8px solid #ffd473;
+}
+body .main .small-cards .media {
+  border-bottom: 1px solid #ededed;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+body .main .small-cards .media img.media-object {
+  display: block;
+  max-height: 40px;
+  border-radius: 4px;
+}
+body .main .small-cards .media .media-heading {
+  font-weight: 600;
+}
+body .main .small-cards .media::before {
+  content: "١.";
+  float: right;
+  display: block;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 4px;
+  color: #bcbcbc;
+}
+body .main .small-cards .media.selected::before {
+  color: #efbc4a;
+}
+body .main .small-cards .media:nth-child(2)::before {
+  content: "٢.";
+}
+body .main .small-cards .media:nth-child(3)::before {
+  content: "٣.";
+}
+body .main .small-cards .media:nth-child(4)::before {
+  content: "٤.";
+}
+body .main .small-cards .media:nth-child(5)::before {
+  content: "٥.";
+}
+body .main .small-cards .media .media-left.media-middle {
+  padding-right: 0;
+  padding-left: 10px;
+}
+body .main .small-cards .editing-info {
+  position: relative;
+  width: auto;
+  bottom: auto;
+  font-size: 10px;
+}
+body .main .small-cards .editing-info > div {
+  float: none;
+}
+body .main .small-cards .editing-info .editing-date {
+  text-align: right;
+}
+
+@media (min-width: 970px) and (max-width: 1170px) {
+  body .main .card .card-body p.card-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 970px) {
+  body .main .card .card-body {
+    height: auto;
+  }
+  body .main .card .card-body p.card-text {
+    font-size: 12px;
+  }
+  body .main .card .editing-info {
+    font-size: 12px;
+    position: relative;
+    width: auto;
+    bottom: 0;
+    padding-bottom: 12px;
+    display: flex;
+  }
+}
+@media (max-width: 750px) {
+  body .main .row div.cardsContainer {
+    padding-right: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

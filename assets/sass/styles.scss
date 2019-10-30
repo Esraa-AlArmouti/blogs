@@ -1,0 +1,207 @@
+@import "main-config";
+
+body {
+  direction: $direction;
+  text-align: $start-direction;
+  font-family: $font-type, $letter-form;
+  background-color: $background-color;
+  .main-header{
+    @include padding-horizontal($dog);
+    color: $header1-color;
+  }
+  .main{
+    .row{
+      div.cardsContainer,div.small-cards-container{
+        float: $start-direction;
+        & .row{
+          @include margin-reset;
+        }
+        .popular-header {
+          border-bottom: 1px solid $border-top-bottom-color;
+          padding: $spider;
+          margin-#{$end-direction}: $bird;
+          @include margin-bottom(0);
+          color: $header1-color;
+        }
+
+      }
+      div.cardsContainer{
+        padding-#{$start-direction}: 0;
+      }
+      div.small-cards-container{
+        padding-#{$end-direction}: 0;
+      }
+
+    }
+    .card{
+      background-color: $card-background-color;
+      display: flex;
+      @include margin-bottom($spider);
+      border-top-#{$start-direction}-radius: 0;
+      border-bottom-#{$start-direction}-radius: 0;
+      @include padding-reset;
+      -webkit-box-shadow: 0 $bee $spider $default-border-color;
+      box-shadow: 0 $bee $spider $default-border-color;
+      border: 1px solid #dddddd59;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img.card-img-top{
+        @include padding-reset;
+        float: $start-direction;
+      }
+      .card-body {
+        height: 100%;
+        .card-title{
+          font-weight: $default-title-weight;
+        }
+        p.card-text {
+          font-weight: $default-font-weight;
+          font-size: $default-font-size;
+          color: $header2-color;;
+        }
+    }
+    }
+    span.icon-bookmark {
+      float: $end-direction;
+      font-size: $bird;
+      color: $header1-color;
+    }
+    .editing-info {
+      font-size: $mouse;
+      position: absolute;
+      width: calc(100% - #{$dog} - #{$ant});
+      bottom: $mouse;
+      & > div {
+        @include padding-reset;
+        float: $start-direction;
+      }
+      .editing-date {
+        text-align: $end-direction;
+        & > div {
+          display: inline-block;
+          color: $normal-font-color;
+        }
+      }
+      .editor-name{
+        color: $header2-color;
+        font-weight: $default-name-weight;
+        span.normal-font{
+          font-weight:$default-font-weight;
+        }
+      }
+    }
+
+
+    .icon{
+      color: $icon-color;
+    }
+    .time-info::before {
+      content: "|";
+      color:$normal-font-color;
+    }
+    .small-cards{
+      border-#{$end-direction}: $spider solid $border-color;
+      .media{
+        border-bottom: 1px solid $border-top-bottom-color;
+        margin-right: $spider;
+        @include padding-vertical($spider);
+        img.media-object {
+          display: block;
+          max-height: $pig;
+          border-radius: $bee;
+        }
+        .media-heading{
+          font-weight: $default-title-weight;
+        }
+        &::before {
+          content: $one +".";
+          float: $start-direction;
+          display: block;
+          line-height: $pig;
+          font-size: $bunny;
+          font-weight: bold;
+          margin-#{$end-direction}: $bunny;
+          margin-#{$start-direction}: $bee;
+          color: $normal-font-color;
+
+        }
+        &.selected::before {
+          color: $selected-font-color;
+        }
+        &:nth-child(2)::before{
+          content: $two+".";
+        }
+        &:nth-child(3)::before{
+          content: $three+".";
+        }
+        &:nth-child(4)::before{
+          content: $four+".";
+        }
+        &:nth-child(5)::before{
+          content: $five+".";
+        }
+        .media-left.media-middle {
+          padding-#{$start-direction}: 0;
+          padding-#{$end-direction}: 10px;
+        }
+      }
+      .editing-info {
+        position: relative;
+        width: auto;
+        bottom: auto;
+        font-size: 10px;
+        & > div{
+           float: none;
+        }
+        .editing-date {
+          text-align: $start-direction;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width:$screen-md) and (max-width: $screen-large) {
+  body .main .card .card-body p.card-text {
+    font-size: $mouse;
+  }
+}
+@media (max-width: $screen-md) {
+  body {
+    .main {
+      .card {
+        .card-body {
+          height: auto;
+
+          p.card-text {
+            font-size: $mouse;
+          }
+        }
+
+        .editing-info {
+          font-size: 12px;
+          position: relative;
+          width: auto;
+          bottom: 0;
+          padding-bottom: $mouse;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $screen-sm){
+  body {
+    .main {
+      .row {
+        div.cardsContainer {
+          padding-#{$start-direction}: 15px;
+        }
+      }
+    }
+  }
+}

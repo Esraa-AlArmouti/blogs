@@ -1,0 +1,57 @@
+//Directions
+$direction           :ltr;
+$opposite-direction   :rtl;
+$start-direction     :left;
+$end-direction       :right;
+$transform-direction :-1;
+
+
+//sizes
+$ant:2px;
+$bee:4px;
+$spider:8px;
+$mouse:12px;
+$bird:16px;
+$bunny:20px;
+$dog:32px;
+$pig:40px;
+$cow:48px;
+$horse:64px;
+$elephant:128px;
+$default-font-weight:200;
+$default-name-weight:400;
+$default-title-weight:600;
+$default-font-size:14px;
+
+
+//colors
+$background-color:#fbfbfb;
+$border-color:#ffd473;
+$default-border-color: #f7f7f7;
+$border-top-bottom-color:#ededed;
+$icon-color:#f0ba40;
+$pined-icon-color:#7f8295;
+$header1-color:#64677e;
+$header2-color:#9d9fad;
+$see-more-color:#5ab8ff;
+$selected-font-color:#efbc4a;
+$normal-font-color:#bcbcbc;
+$card-background-color:#ffffff;
+
+
+
+//font type
+$font-type:'Cairo';
+$letter-form: sans-serif;
+
+//numbers
+$one:"1";
+$two:"2";
+$three:"3";
+$four:"4";
+$five:"5";
+
+//breakpoints
+$screen-sm:750px;
+$screen-md:970px;
+$screen-large:1170px;
